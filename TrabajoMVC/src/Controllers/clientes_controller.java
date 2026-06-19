@@ -39,5 +39,19 @@ public class clientes_controller {
        return false;
        }
     }
-    
+    //actualizar 
+    public boolean
+           actualizarCliente(int id_cliente, String nombre,
+            String apellido, int telefono) {
+
+        clientes_model cliente = buscarCliente(id_cliente);
+
+        if (cliente != null) {
+            cliente.setNombre(nombre);
+            cliente.setApellido(apellido);
+            cliente.setTelefono(telefono);
+            return true;
+        }
+        return false;
+    }
 }
