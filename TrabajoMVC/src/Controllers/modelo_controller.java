@@ -35,4 +35,9 @@ public class vehiculo_controller {
         }
     }
 
-   
+    // Buscar
+    public vehiculo_model buscarVehiculo(int idVehiculo) {
+        return listaVehiculos.get(idVehiculo);
+    }
+
+    
