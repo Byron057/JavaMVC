@@ -17,11 +17,12 @@ public class clientes_model {
     public clientes_model(int id_cliente,String nombre,String apellido,int telefono){
       this.id_cliente =id_cliente;
       this.nombre = nombre;
+      this.apellido = apellido;
+      this.telefono = telefono;
       
-      
-    
-    
+    }
+    public int getIdCliente(){
+    return id_cliente;
     
     }
-    
 }
