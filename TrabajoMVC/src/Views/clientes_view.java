@@ -27,6 +27,24 @@ public class clientes_view {
             System.out.println("5. Salir");
 
             int opcion = sc.nextInt();
+            switch (opcion) {
+
+                case 1:
+                    int id_cliente = autoincrementablekey++;
+                    sc.nextLine();
+
+                    System.out.print("Nombre: ");
+                    String nombre = sc.nextLine();
+
+                    System.out.print("Apellido: ");
+                    String apellido = sc.nextLine();
+
+                    System.out.print("Telefono: ");
+                    String telefono = sc.nextLine();
+
+                    clientes_model cliente = new clientes_model(
+                            id_cliente, nombre, apellido, telefono);
+
 
         }
     
