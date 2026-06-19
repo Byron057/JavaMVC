@@ -40,4 +40,15 @@ public class vehiculo_controller {
         return listaVehiculos.get(idVehiculo);
     }
 
+    // Eliminar
+    public boolean eliminarVehiculo(int idVehiculo) {
+
+        if (listaVehiculos.containsKey(idVehiculo)) {
+            listaVehiculos.remove(idVehiculo);
+            return true;
+        }
+
+        return false;
+    }
+
     
