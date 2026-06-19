@@ -70,6 +70,16 @@ public class clientes_view {
                         System.out.println("Cliente no encontrado");
                     }
                     break;
+                    case 4:
+                    System.out.print("ID Cliente: ");
+                    id_cliente = sc.nextInt();
+
+                    if (control.eliminarCliente(id_cliente)) {
+                        System.out.println("Cliente eliminado");
+                    } else {
+                        System.out.println("Cliente no encontrado");
+                    }
+                    break;
 
 
 
