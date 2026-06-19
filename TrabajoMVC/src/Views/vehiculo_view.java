@@ -67,10 +67,10 @@ public class vehiculo_view {
                     }else{
                         System.out.println("No se encontro un Vehiculo registrado con el ID: "+id_vehiculo );
                     }
+                    break;
                 case 5:
                     System.out.println("Saliendo del Sitema de Vehiculos....");
-                    System.exit(0);
-                    break;
+                    return;
                 default:
                     System.out.println("Ingrese una Opcion Valida");
                     

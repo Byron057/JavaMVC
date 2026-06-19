@@ -4,7 +4,7 @@
  */
 package trabajomvc;
 import java.util.Scanner;
-
+import Views.vehiculo_view;
 /**
  *
  * @author PC
@@ -27,7 +27,8 @@ public class TrabajoMVC {
             int opc = sc.nextInt();
             switch(opc){
                 case 1:
-                    System.out.println("Caso 1");
+                    vehiculo_view vehiculo= new vehiculo_view();
+                    vehiculo.main();
                     break;
                 case 2:
                     //importar crud

@@ -31,7 +31,7 @@ public class vehiculo_controller {
     public boolean eliminarVehiculo(int id_vehiculo){
         vehiculo_model vehiculo= buscarVehiculo(id_vehiculo);
         if(vehiculo!=null){
-            listaVehiculos.remove(id_vehiculo);
+            listaVehiculos.remove(vehiculo);
             return true;
         }else{
             return false;
