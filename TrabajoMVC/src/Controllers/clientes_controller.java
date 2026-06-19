@@ -17,8 +17,12 @@ public class clientes_controller {
         System.out.println("Cliente agregado con exito...");
     }
     public void listarClientes(){
+        if(listaClientes.isEmpty()){
+            System.out.println("No hay clientes agregados...");
+        }else{
         for(clientes_model cliente : listaClientes){
           System.out.println(cliente);
+        }
         }
     }
     public clientes_model buscarCliente(int id_cliente){
