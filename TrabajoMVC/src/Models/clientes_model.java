@@ -25,4 +25,11 @@ public class clientes_model {
     return id_cliente;
     
     }
+    public String getNombre(){
+    return nombre;
+
+    }
+    public String getApellido(){
+    return apellido;
+    }
 }
