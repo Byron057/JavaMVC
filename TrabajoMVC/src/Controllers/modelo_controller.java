@@ -51,4 +51,23 @@ public class vehiculo_controller {
         return false;
     }
 
-    
+    // Actualizar
+    public boolean actualizarVehiculo(int idVehiculo,
+                                      String marca,
+                                      String modelo,
+                                      String placa) {
+
+        vehiculo_model vehiculo = listaVehiculos.get(idVehiculo);
+
+        if (vehiculo != null) {
+
+            vehiculo.setMarca(marca);
+            vehiculo.setModelo(modelo);
+            vehiculo.setPlaca(placa);
+
+            return true;
+        }
+
+        return false;
+    }
+}
