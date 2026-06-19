@@ -10,11 +10,7 @@ import java.util.HashMap;
  * @author HP
  */
 public class modelo_controller {
-
-
-public class vehiculo_controller {
-
-    private HashMap<Integer, vehiculo_model> listaVehiculos = new HashMap<>();
+    public HashMap<Integer, vehiculo_model> listaVehiculos = new HashMap<>();
 
     // Agregar
     public void agregarVehiculo(vehiculo_model vehiculo) {
@@ -70,4 +66,4 @@ public class vehiculo_controller {
 
         return false;
     }
-}}
+}
