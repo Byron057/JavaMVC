@@ -29,4 +29,15 @@ public class clientes_controller {
         }
         return null;
     }
+    public boolean eliminarCliente(int id_cliente){
+       clientes_model clientes = buscarCliente(id_cliente);
+       if(clientes != null){
+        listaClientes.remove(clientes);
+        return true;
+       
+       }else{
+       return false;
+       }
+    }
+    
 }
