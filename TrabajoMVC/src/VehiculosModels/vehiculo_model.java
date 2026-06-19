@@ -32,4 +32,22 @@ public class vehiculo_model {
     public int getAño(){
         return año;
     }
+    public void setIdVehiculo(int id_vehiculo){
+        this.id_vehiculo = id_vehiculo;
+    }
+    public void setPlaca(String placa){
+        this.placa = placa;
+    }
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+    public void setAño(int año){
+        this.año= año;
+    }
+    
+    @Override
+    public String toString(){
+        return "ID Vehiculo: "+id_vehiculo+" Placa: "+placa+" Modelo: "+modelo+" Año: "+año;
+    }
+    
 }
