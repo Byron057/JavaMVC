@@ -16,9 +16,19 @@ public class clientes_view {
     clientes_controller control = new clientes_controller();
     int autoincrementablekey = 1;
 
-    public void main() {
+    public void menu() {
 
         while (true) {
+            System.out.println("===== CRUD CLIENTES =====");
+            System.out.println("1. Agregar");
+            System.out.println("2. Mostrar");
+            System.out.println("3. Actualizar");
+            System.out.println("4. Eliminar");
+            System.out.println("5. Salir");
+
+            int opcion = sc.nextInt();
+
+        }
     
     
     
