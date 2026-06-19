@@ -16,5 +16,9 @@ public class clientes_controller {
       listaClientes.add(cliente);
         System.out.println("Cliente agregado con exito...");
     }
-    
+    public void listarClientes(){
+    for(clientes_model cliente : listaClientes){
+        System.out.println(cliente);
+    }
+    }
 }
