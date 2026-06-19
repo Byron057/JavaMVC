@@ -5,6 +5,7 @@
 package trabajomvc;
 import java.util.Scanner;
 import Views.vehiculo_view;
+import Views.clientes_view;
 /**
  *
  * @author PC
@@ -21,17 +22,20 @@ public class TrabajoMVC {
             System.out.println("     Trabajo Grupo 8    ");
             System.out.println("========================");
             System.out.println("1.Crud Vehiculos");
-            System.out.println("2.");
+            System.out.println("2.Crud clientes");
             System.out.println("3.");
             System.out.println("4.Salir");
             int opc = sc.nextInt();
+            sc.nextLine();
             switch(opc){
                 case 1:
                     vehiculo_view vehiculo= new vehiculo_view();
                     vehiculo.main();
                     break;
                 case 2:
-                    //importar crud
+                    clientes_view clientes = new clientes_view();
+                    clientes.menu();
+                    break;
                 case 3:
                     //importar crud
                 case 4:

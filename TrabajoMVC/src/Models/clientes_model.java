@@ -12,9 +12,9 @@ public class clientes_model {
     public int id_cliente;
     public String nombre;
     public String apellido;
-    public int telefono;
+    public String telefono;
     
-    public clientes_model(int id_cliente,String nombre,String apellido,int telefono){
+    public clientes_model(int id_cliente,String nombre,String apellido,String telefono){
       this.id_cliente =id_cliente;
       this.nombre = nombre;
       this.apellido = apellido;
@@ -32,7 +32,7 @@ public class clientes_model {
     public String getApellido(){
     return apellido;
     }
-    public int getTelefono(){
+    public String getTelefono(){
     return telefono;
     }
     public void setIdCliente(int id_cliente){
@@ -44,7 +44,7 @@ public class clientes_model {
     public void setApellido(String apellido){
     this.apellido = apellido;
     }
-    public void setTelefono(int telefono){
+    public void setTelefono(String telefono){
         this.telefono = telefono;
     }
     @Override

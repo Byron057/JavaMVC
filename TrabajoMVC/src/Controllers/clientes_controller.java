@@ -42,7 +42,7 @@ public class clientes_controller {
     //actualizar 
     public boolean
            actualizarCliente(int id_cliente, String nombre,
-            String apellido, int telefono) {
+            String apellido, String telefono) {
 
         clientes_model cliente = buscarCliente(id_cliente);
 

@@ -27,11 +27,14 @@ public class clientes_view {
             System.out.println("5. Salir");
 
             int opcion = sc.nextInt();
+            sc.nextLine();
             switch (opcion) {
 
                 case 1:
-                    int id_cliente = autoincrementablekey++;
+                    System.out.println("ID del cliente:");
+                    int id_cliente = sc.nextInt();
                     sc.nextLine();
+                    
 
                     System.out.print("Nombre: ");
                     String nombre = sc.nextLine();
@@ -40,7 +43,7 @@ public class clientes_view {
                     String apellido = sc.nextLine();
 
                     System.out.print("Telefono: ");
-                    int telefono = sc.nextInt();
+                    String telefono = sc.nextLine();
 
                     clientes_model cliente = new clientes_model(
                             id_cliente, nombre, apellido, telefono);
@@ -62,7 +65,7 @@ public class clientes_view {
                     apellido = sc.nextLine();
 
                     System.out.print("Nuevo telefono: ");
-                    telefono = sc.nextInt();
+                    telefono = sc.nextLine();
 
                     if (control.actualizarCliente(id_cliente, nombre, apellido, telefono)) {
                         System.out.println("Cliente actualizado");
