@@ -44,6 +44,17 @@ public class clientes_view {
 
                     clientes_model cliente = new clientes_model(
                             id_cliente, nombre, apellido, telefono);
+                    control.agregarCliente(cliente);
+                    break;
+
+                case 2:
+                    control.listarClientes();
+                    break;
+
+                case 3:
+                    System.out.print("ID Cliente: ");
+                    id_cliente = sc.nextInt();
+                    sc.nextLine();
 
 
         }
