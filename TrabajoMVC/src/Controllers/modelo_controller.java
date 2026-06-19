@@ -22,4 +22,17 @@ public class vehiculo_controller {
         System.out.println("Vehículo agregado con éxito.");
     }
 
-    
+    // Listar
+    public void listarVehiculos() {
+
+        if (listaVehiculos.isEmpty()) {
+            System.out.println("No existen vehículos registrados.");
+        } else {
+
+            for (vehiculo_model vehiculo : listaVehiculos.values()) {
+                System.out.println(vehiculo);
+            }
+        }
+    }
+
+   
