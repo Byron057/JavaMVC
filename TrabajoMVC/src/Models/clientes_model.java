@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Models;
+
+/**
+ *
+ * @author Usuario
+ */
+public class clientes_model {
+    public int id_cliente;
+    public String nombre;
+    public String apellido;
+    public int telefono;
+    
+    public clientes_model(int id_cliente,String nombre,String apellido,int telefono){
+      this.id_cliente =id_cliente;
+      this.nombre = nombre;
+      
+      
+    
+    
+    
+    }
+    
+}
