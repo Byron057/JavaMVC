@@ -37,7 +37,10 @@ public class TrabajoMVC {
                     clientes.menu();
                     break;
                 case 3:
-                    //importar crud
+                    modelo_view modelo =new modelo_view();
+                    modelo.menu();
+                    break;
+                    
                 case 4:
                     System.out.println("Saliendo del Sistema.....");
                     System.exit(0);
