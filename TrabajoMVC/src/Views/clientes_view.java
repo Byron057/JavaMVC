@@ -80,10 +80,19 @@ public class clientes_view {
                         System.out.println("Cliente no encontrado");
                     }
                     break;
+                    case 5:
+                    return;
 
-
-
+                default:
+                    System.out.println("Opcion incorrecta");
+            }
         }
+    }
+}
+
+
+
+        
     
     
     
