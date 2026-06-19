@@ -41,4 +41,10 @@ public class clientes_model {
     public void setNombre(String nombre){
     this.nombre = nombre;
     }
+    public void setApellido(String apellido){
+    this.apellido = apellido;
+    }
+    public void setTelefono(int telefono){
+        this.telefono = telefono;
+    }
 }
