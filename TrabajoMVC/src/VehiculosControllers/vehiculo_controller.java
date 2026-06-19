@@ -37,5 +37,15 @@ public class vehiculo_controller {
             return false;
         }
     }
+    public boolean actualizarVehiculo(int id_vehiculo, String placa, String modelo, int año){
+        vehiculo_model vehiculo = buscarVehiculo(id_vehiculo);
+        if(vehiculo != null){
+            vehiculo.setPlaca(placa);
+            vehiculo.setModelo(modelo);
+            vehiculo.setAño(año);
+            return true;
+        }
+        return false;
+    }
 }
 
