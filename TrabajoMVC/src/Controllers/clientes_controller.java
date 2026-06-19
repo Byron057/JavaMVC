@@ -17,8 +17,16 @@ public class clientes_controller {
         System.out.println("Cliente agregado con exito...");
     }
     public void listarClientes(){
-    for(clientes_model cliente : listaClientes){
-        System.out.println(cliente);
+        for(clientes_model cliente : listaClientes){
+          System.out.println(cliente);
+        }
     }
+    public clientes_model buscarCliente(int id_cliente){
+        for(clientes_model clientes: listaClientes){
+          if(clientes.getIdCliente()== id_cliente){
+              return clientes;
+          }
+        }
+        return null;
     }
 }
