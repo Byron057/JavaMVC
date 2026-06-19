@@ -19,3 +19,18 @@ public class vehiculo_model {
     private String marca;
     private String modelo;
     private String placa; 
+
+public vehiculo_model(int idVehiculo, String marca, String modelo, String placa) {
+        this.idVehiculo = idVehiculo;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.placa = placa;
+    }
+
+    public int getIdVehiculo() {
+        return idVehiculo;
+    }
+
+    public void setIdVehiculo(int idVehiculo) {
+        this.idVehiculo = idVehiculo;
+    }
