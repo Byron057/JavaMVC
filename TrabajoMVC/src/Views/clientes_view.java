@@ -40,7 +40,7 @@ public class clientes_view {
                     String apellido = sc.nextLine();
 
                     System.out.print("Telefono: ");
-                    String telefono = sc.nextLine();
+                    int telefono = sc.nextInt();
 
                     clientes_model cliente = new clientes_model(
                             id_cliente, nombre, apellido, telefono);
@@ -51,7 +51,7 @@ public class clientes_view {
                     control.listarClientes();
                     break;
 
-                case 3:
+                case 3://actualizar
                     System.out.print("ID Cliente: ");
                     id_cliente = sc.nextInt();
                     sc.nextLine();
@@ -62,7 +62,7 @@ public class clientes_view {
                     apellido = sc.nextLine();
 
                     System.out.print("Nuevo telefono: ");
-                    telefono = sc.nextLine();
+                    telefono = sc.nextInt();
 
                     if (control.actualizarCliente(id_cliente, nombre, apellido, telefono)) {
                         System.out.println("Cliente actualizado");
@@ -70,7 +70,7 @@ public class clientes_view {
                         System.out.println("Cliente no encontrado");
                     }
                     break;
-                    case 4:
+                    case 4://eliminar
                     System.out.print("ID Cliente: ");
                     id_cliente = sc.nextInt();
 
@@ -96,4 +96,4 @@ public class clientes_view {
     
     
     
-}
+
