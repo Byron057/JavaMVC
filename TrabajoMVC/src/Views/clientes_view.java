@@ -55,6 +55,22 @@ public class clientes_view {
                     System.out.print("ID Cliente: ");
                     id_cliente = sc.nextInt();
                     sc.nextLine();
+                     System.out.print("Nuevo nombre: ");
+                    nombre = sc.nextLine();
+
+                    System.out.print("Nuevo apellido: ");
+                    apellido = sc.nextLine();
+
+                    System.out.print("Nuevo telefono: ");
+                    telefono = sc.nextLine();
+
+                    if (control.actualizarCliente(id_cliente, nombre, apellido, telefono)) {
+                        System.out.println("Cliente actualizado");
+                    } else {
+                        System.out.println("Cliente no encontrado");
+                    }
+                    break;
+
 
 
         }
