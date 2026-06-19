@@ -32,4 +32,13 @@ public class clientes_model {
     public String getApellido(){
     return apellido;
     }
+    public int getTelefono(){
+    return telefono;
+    }
+    public void setIdCliente(int id_cliente){
+     this.id_cliente = id_cliente;
+    }
+    public void setNombre(String nombre){
+    this.nombre = nombre;
+    }
 }
