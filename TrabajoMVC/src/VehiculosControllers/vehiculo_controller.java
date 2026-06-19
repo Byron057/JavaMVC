@@ -15,4 +15,21 @@ public class vehiculo_controller {
         listaVehiculos.add(vehiculo);
         System.out.println("Vehiculo Agregado con Exito");
     }
+    public void listarVehiculos(){
+        for(vehiculo_model vehiculo : listaVehiculos){
+            System.out.println(vehiculo);
+        }
+    }
+    public vehiculo_model buscarVehiculo(int id_vehiculo){
+        for(vehiculo_model vehiculo : listaVehiculos){
+            if(vehiculo.getIdVehiculo() == id_vehiculo){
+                return vehiculo;
+            }
+        }
+        return  null;
+    }
+    public boolean eliminarVehiculo(){
+        
+    }
 }
+
