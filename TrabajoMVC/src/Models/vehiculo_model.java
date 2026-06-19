@@ -49,5 +49,9 @@ public class vehiculo_model {
     public String toString(){
         return "ID Vehiculo: "+id_vehiculo+" Placa: "+placa+" Modelo: "+modelo+" Año: "+año;
     }
+
+    public void setMarca(String marca) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

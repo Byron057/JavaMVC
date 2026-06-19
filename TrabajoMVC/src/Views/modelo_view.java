@@ -13,16 +13,18 @@ import java.util.Scanner;
 public class modelo_view {
 
 
-
 public class vehiculo_view {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         vehiculo_controller controlador = new vehiculo_controller();
+
         int opcion;
 
         do {
-            System.out.println("\n=== GESTIÓN DE VEHÍCULOS ===");
+
+            System.out.println("\n===== MENÚ VEHÍCULOS =====");
             System.out.println("1. Agregar vehículo");
             System.out.println("2. Listar vehículos");
             System.out.println("3. Buscar vehículo");
@@ -36,6 +38,7 @@ public class vehiculo_view {
             switch (opcion) {
 
                 case 1:
+
                     System.out.print("ID: ");
                     int id = sc.nextInt();
                     sc.nextLine();
@@ -53,14 +56,18 @@ public class vehiculo_view {
                             new vehiculo_model(id, marca, modelo, placa);
 
                     controlador.agregarVehiculo(vehiculo);
+
                     break;
 
                 case 2:
+
                     controlador.listarVehiculos();
+
                     break;
 
                 case 3:
-                    System.out.print("Ingrese ID del vehículo: ");
+
+                    System.out.print("Ingrese ID a buscar: ");
                     int idBuscar = sc.nextInt();
 
                     vehiculo_model encontrado =
@@ -71,10 +78,12 @@ public class vehiculo_view {
                     } else {
                         System.out.println("Vehículo no encontrado.");
                     }
+
                     break;
 
                 case 4:
-                    System.out.print("ID del vehículo a actualizar: ");
+
+                    System.out.print("ID del vehículo: ");
                     int idActualizar = sc.nextInt();
                     sc.nextLine();
 
@@ -97,10 +106,12 @@ public class vehiculo_view {
                     } else {
                         System.out.println("Vehículo no encontrado.");
                     }
+
                     break;
 
                 case 5:
-                    System.out.print("ID del vehículo a eliminar: ");
+
+                    System.out.print("ID a eliminar: ");
                     int idEliminar = sc.nextInt();
 
                     if (controlador.eliminarVehiculo(idEliminar)) {
@@ -108,13 +119,17 @@ public class vehiculo_view {
                     } else {
                         System.out.println("Vehículo no encontrado.");
                     }
+
                     break;
 
                 case 6:
+
                     System.out.println("Programa finalizado.");
+
                     break;
 
                 default:
+
                     System.out.println("Opción inválida.");
             }
 
@@ -122,5 +137,4 @@ public class vehiculo_view {
 
         sc.close();
     }
-}
-}
+}}
