@@ -47,4 +47,11 @@ public class clientes_model {
     public void setTelefono(int telefono){
         this.telefono = telefono;
     }
+    @Override
+    public String toString(){
+        return "ID Cliente: "+id_cliente+
+                " Nombre: "+nombre+
+                " Apellido: "+apellido+
+                " Telefono: "+telefono;
+    }
 }
