@@ -27,7 +27,8 @@ public class TrabajoMVC {
             int opc = sc.nextInt();
             switch(opc){
                 case 1:
-                    //importar crud de vehiculos
+                    System.out.println("Caso 1");
+                    break;
                 case 2:
                     //importar crud
                 case 3:
